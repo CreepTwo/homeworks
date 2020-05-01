@@ -170,14 +170,14 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
         sendForm(form);
-        sendForm(formBottom);
+        // sendForm(formBottom);
 
 
         // Slider
 
         let slideIndex = 1,
             slides = document.querySelectorAll('.slider-item'),
-            prev = document.querySelectorAll('.prev'),
+            prev = document.querySelector('.prev'),
             next = document.querySelector('.next'),
             dotsWrap = document.querySelector('.slider-dots'),
             dots = document.querySelectorAll('.dot');
@@ -209,7 +209,7 @@ window.addEventListener('DOMContentLoaded', function() {
         }
 
         prev.addEventListener('click', function() {
-            plusSlides(-1);
+            plusSlides(1);
         });
 
         next.addEventListener('click', function() {
